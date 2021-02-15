@@ -34,10 +34,10 @@ public class MainActivity extends AppCompatActivity {
         textChart.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                textChart.setBackgroundColor(Color.parseColor("#F5F5F5"));
-                textCart.setBackgroundColor(Color.parseColor("#F5F5F5"));
-                textHome.setBackgroundColor(Color.parseColor("#F5F5F5"));
-                textSetting.setBackgroundColor(Color.parseColor("#F5F5F5"));
+                textChart.setBackgroundColor(Color.parseColor("#2E2E2E"));
+                textCart.setBackgroundColor(Color.parseColor("#FFFFFF"));
+                textHome.setBackgroundColor(Color.parseColor("#FFFFFF"));
+                textSetting.setBackgroundColor(Color.parseColor("#FFFFFF"));
                 getSupportFragmentManager()
                         .beginTransaction()
                         .replace(R.id.fragment_container, new BodyFragment())
@@ -48,10 +48,10 @@ public class MainActivity extends AppCompatActivity {
 
         textCart.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
-                textChart.setBackgroundColor(Color.parseColor("#00000"));
-                textCart.setBackgroundColor(Color.parseColor("#F5F5F5"));
-                textHome.setBackgroundColor(Color.parseColor("#F5F5F5"));
-                textSetting.setBackgroundColor(Color.parseColor("#F5F5F5"));
+                textChart.setBackgroundColor(Color.parseColor("#FFFFFF"));
+                textCart.setBackgroundColor(Color.parseColor("#2E2E2E"));
+                textHome.setBackgroundColor(Color.parseColor("#FFFFFF"));
+                textSetting.setBackgroundColor(Color.parseColor("#FFFFFF"));
                 getSupportFragmentManager()
                         .beginTransaction()
                         .replace(R.id.fragment_container, new HairFragment())
@@ -64,10 +64,10 @@ public class MainActivity extends AppCompatActivity {
         textHome.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                textChart.setBackgroundColor(Color.parseColor("#000"));
-                textCart.setBackgroundColor(Color.parseColor("#F5F5F5"));
-                textHome.setBackgroundColor(Color.parseColor("#F5F5F5"));
-                textSetting.setBackgroundColor(Color.parseColor("#F5F5F5"));
+                textChart.setBackgroundColor(Color.parseColor("#FFFFFF"));
+                textCart.setBackgroundColor(Color.parseColor("#FFFFFF"));
+                textHome.setBackgroundColor(Color.parseColor("#2E2E2E"));
+                textSetting.setBackgroundColor(Color.parseColor("#FFFFFF"));
 
                 getSupportFragmentManager()
                         .beginTransaction()
@@ -80,10 +80,10 @@ public class MainActivity extends AppCompatActivity {
         textSetting.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                textChart.setBackgroundColor(Color.parseColor("#000"));
-                textCart.setBackgroundColor(Color.parseColor("#F5F5F5"));
-                textHome.setBackgroundColor(Color.parseColor("#F5F5F5"));
-                textSetting.setBackgroundColor(Color.parseColor("#F5F5F5"));
+                textChart.setBackgroundColor(Color.parseColor("#FFFFFF"));
+                textCart.setBackgroundColor(Color.parseColor("#FFFFFF"));
+                textHome.setBackgroundColor(Color.parseColor("#FFFFFF"));
+                textSetting.setBackgroundColor(Color.parseColor("#2E2E2E"));
                 getSupportFragmentManager()
                         .beginTransaction()
                         .replace(R.id.fragment_container, new SkinFragment())
