@@ -27,6 +27,11 @@ public class MainActivity extends AppCompatActivity {
 
     private void init() {
 
+        getSupportFragmentManager()
+                .beginTransaction()
+                .replace(R.id.fragment_container, new FaceFragment())
+                .addToBackStack(null)
+                .commit();
         textChart = findViewById(R.id.textChart);
         textSetting = findViewById(R.id.testSetting);
         textHome = findViewById(R.id.textHome);

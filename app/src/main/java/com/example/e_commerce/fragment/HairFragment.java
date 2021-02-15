@@ -41,8 +41,18 @@ public class HairFragment extends Fragment {
         setProductCategoryAdapter(productCategoryList,view);
 
         List<Products> productsList = new ArrayList<>();
-        productsList.add(new Products(1,"abc","250ml","$250",R.drawable.prod1));
-        productsList.add(new Products(2,"def","520ml","$521",R.drawable.prod2));
+        productsList.add(new Products(1,"abc","250ml","$250",R.drawable.prod));
+        productsList.add(new Products(2,"dssssssef","520ml","$521",R.drawable.prod));
+        productsList.add(new Products(1,"abddc","250ml","$250",R.drawable.prod));
+        productsList.add(new Products(2,"dfffef","520ml","$521",R.drawable.prod));
+        productsList.add(new Products(1,"abc","250ml","$250",R.drawable.prod));
+        productsList.add(new Products(2,"dssssssef","520ml","$521",R.drawable.prod));
+        productsList.add(new Products(1,"abddc","250ml","$250",R.drawable.prod));
+        productsList.add(new Products(2,"dfffef","520ml","$521",R.drawable.prod));
+        productsList.add(new Products(1,"abc","250ml","$250",R.drawable.prod));
+        productsList.add(new Products(2,"dssssssef","520ml","$521",R.drawable.prod));
+        productsList.add(new Products(1,"abddc","250ml","$250",R.drawable.prod));
+        productsList.add(new Products(2,"dfffef","520ml","$521",R.drawable.prod));
 
         setProItemAdapter(productsList,view);
 
@@ -58,7 +68,7 @@ public class HairFragment extends Fragment {
 
     private void setProItemAdapter(List<Products> productsList,View view){
         proItemRecycler = view.findViewById(R.id.product_recycler);
-        RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(getContext(),RecyclerView.HORIZONTAL,false);
+        RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(getContext(),RecyclerView.VERTICAL,false);
         proItemRecycler.setLayoutManager(layoutManager);
         productAdapter = new ProductAdapter(getContext(),productsList);
         proItemRecycler.setAdapter(productAdapter);
