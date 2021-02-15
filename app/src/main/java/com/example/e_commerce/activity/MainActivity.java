@@ -27,9 +27,9 @@ public class MainActivity extends AppCompatActivity {
 
     private void init() {
 
-        textBody = findViewById(R.id.textBody);
-        textSkin = findViewById(R.id.textSkin);
-        textFace = findViewById(R.id.textFace);
+        textBody = findViewById(R.id.textItem);
+        textSkin = findViewById(R.id.testSetting);
+        textFace = findViewById(R.id.textHome);
         textHair = findViewById(R.id.textHair);
         textBody.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -76,7 +76,7 @@ public class MainActivity extends AppCompatActivity {
                         .commit();
             }
         });
-        textSkin = findViewById(R.id.textSkin);
+        textSkin = findViewById(R.id.testSetting);
         textSkin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

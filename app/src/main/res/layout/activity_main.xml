@@ -9,70 +9,65 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraintLayout_left"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="0dp"
         android:background="#F5F5F5"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
 
 
         <TextView
-            android:id="@+id/textFace"
-            android:layout_width="50dp"
-            android:layout_height="100dp"
+            android:id="@+id/textHome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:fontFamily="@font/rubik_medium"
             android:gravity="center"
-            android:rotation="270"
             android:text="Face"
             android:textColor="#373131"
             android:textSize="16sp"
-            app:layout_constraintBottom_toTopOf="@+id/textHair"
-            app:layout_constraintEnd_toEndOf="@+id/textHair"
-            app:layout_constraintHorizontal_bias="0.523"
-            app:layout_constraintStart_toStartOf="@+id/textHair" />
+            app:layout_constraintBottom_toBottomOf="@id/constraintLayout_left"
+            app:layout_constraintStart_toStartOf="@id/constraintLayout_left"
+            app:layout_constraintTop_toTopOf="@id/constraintLayout_left" />
 
         <TextView
-            android:id="@+id/textSkin"
-            android:layout_width="50dp"
-            android:layout_height="100dp"
+            android:id="@+id/testSetting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:fontFamily="@font/rubik_medium"
             android:gravity="center"
-            android:rotation="270"
+
             android:text="Skin"
             android:textColor="#373131"
             android:textSize="16sp"
-            app:layout_constraintBottom_toTopOf="@+id/textBody"
-            app:layout_constraintEnd_toEndOf="@+id/textBody"
-            app:layout_constraintHorizontal_bias="0.709"
-            app:layout_constraintStart_toStartOf="@+id/textBody" />
+            app:layout_constraintBottom_toBottomOf="@id/constraintLayout_left"
+            app:layout_constraintStart_toStartOf="@id/textHome"
+            app:layout_constraintTop_toTopOf="@id/constraintLayout_left" />
 
         <TextView
-            android:id="@+id/textBody"
+            android:id="@+id/textItem"
             android:layout_width="50dp"
             android:layout_height="100dp"
-            android:gravity="center"
-            android:rotation="270"
-            android:text="Body"
             android:fontFamily="@font/rubik_medium"
+            android:gravity="center"
+            android:text="Body"
             android:textColor="#373131"
             android:textSize="16sp"
-            app:layout_constraintBottom_toTopOf="@+id/textFace"
-            app:layout_constraintEnd_toEndOf="@+id/textFace"
-            app:layout_constraintHorizontal_bias="0.38"
-            app:layout_constraintStart_toStartOf="@+id/textFace" />
+            app:layout_constraintBottom_toBottomOf="@id/constraintLayout_left"
+            app:layout_constraintStart_toStartOf="@id/testSetting"
+            app:layout_constraintTop_toTopOf="@id/constraintLayout_left" />
 
-        <ImageView
-            android:id="@+id/imageSearch"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
-            android:layout_marginEnd="8dp"
-            android:layout_marginBottom="32dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            android:src="@drawable/ic_search" />
+        <!--        <ImageView-->
+        <!--            android:id="@+id/imageSearch"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_marginStart="8dp"-->
+        <!--            android:layout_marginEnd="8dp"-->
+        <!--            android:layout_marginBottom="32dp"-->
+        <!--            app:layout_constraintBottom_toBottomOf="parent"-->
+        <!--            app:layout_constraintEnd_toEndOf="parent"-->
+        <!--            app:layout_constraintStart_toStartOf="parent"-->
+        <!--            android:src="@drawable/ic_search" />-->
 
         <TextView
             android:id="@+id/textHair"
@@ -81,27 +76,26 @@
             android:layout_marginBottom="80dp"
             android:fontFamily="@font/rubik_medium"
             android:gravity="center"
-            android:rotation="270"
             android:text="Hair"
             android:textColor="#373131"
             android:textSize="16sp"
-            app:layout_constraintBottom_toTopOf="@+id/imageSearch"
-            app:layout_constraintEnd_toEndOf="@+id/imageSearch"
-            app:layout_constraintStart_toStartOf="@+id/imageSearch" />
-
+            app:layout_constraintBottom_toBottomOf="@id/constraintLayout_left"
+            app:layout_constraintEnd_toEndOf="@id/constraintLayout_left"
+            app:layout_constraintStart_toStartOf="@id/textItem"
+            app:layout_constraintTop_toTopOf="@id/constraintLayout_left" />
     </androidx.constraintlayout.widget.ConstraintLayout>
-
 
 
     <FrameLayout
         android:id="@+id/fragment_container"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginStart="70dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/constraintLayout_left"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@id/constraintLayout_left"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+        />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
