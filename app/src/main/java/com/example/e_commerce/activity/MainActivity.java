@@ -15,7 +15,7 @@ import com.example.e_commerce.fragment.SkinFragment;
 ;
 
 public class MainActivity extends AppCompatActivity {
-    TextView textHair, textBody, textFace, textSkin;
+    TextView textCart, textChart, textHome, textSetting;
     Integer counter;
 
     @Override
@@ -27,17 +27,17 @@ public class MainActivity extends AppCompatActivity {
 
     private void init() {
 
-        textBody = findViewById(R.id.textItem);
-        textSkin = findViewById(R.id.testSetting);
-        textFace = findViewById(R.id.textHome);
-        textHair = findViewById(R.id.textHair);
-        textBody.setOnClickListener(new View.OnClickListener() {
+        textChart = findViewById(R.id.textChart);
+        textSetting = findViewById(R.id.testSetting);
+        textHome = findViewById(R.id.textHome);
+        textCart = findViewById(R.id.textCart);
+        textChart.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                textBody.setTextColor(Color.parseColor("#005B1B"));
-                textHair.setTextColor(Color.parseColor("#373131"));
-                textFace.setTextColor(Color.parseColor("#373131"));
-                textSkin.setTextColor(Color.parseColor("#373131"));
+                textChart.setBackgroundColor(Color.parseColor("#F5F5F5"));
+                textCart.setBackgroundColor(Color.parseColor("#F5F5F5"));
+                textHome.setBackgroundColor(Color.parseColor("#F5F5F5"));
+                textSetting.setBackgroundColor(Color.parseColor("#F5F5F5"));
                 getSupportFragmentManager()
                         .beginTransaction()
                         .replace(R.id.fragment_container, new BodyFragment())
@@ -46,12 +46,12 @@ public class MainActivity extends AppCompatActivity {
         });
 
 
-        textHair.setOnClickListener(new View.OnClickListener() {
+        textCart.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
-                textBody.setTextColor(Color.parseColor("#373131"));
-                textHair.setTextColor(Color.parseColor("#005B1B"));
-                textFace.setTextColor(Color.parseColor("#373131"));
-                textSkin.setTextColor(Color.parseColor("#373131"));
+                textChart.setBackgroundColor(Color.parseColor("#00000"));
+                textCart.setBackgroundColor(Color.parseColor("#F5F5F5"));
+                textHome.setBackgroundColor(Color.parseColor("#F5F5F5"));
+                textSetting.setBackgroundColor(Color.parseColor("#F5F5F5"));
                 getSupportFragmentManager()
                         .beginTransaction()
                         .replace(R.id.fragment_container, new HairFragment())
@@ -61,13 +61,13 @@ public class MainActivity extends AppCompatActivity {
         });
 
 
-        textFace.setOnClickListener(new View.OnClickListener() {
+        textHome.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                textBody.setTextColor(Color.parseColor("#373131"));
-                textHair.setTextColor(Color.parseColor("#373131"));
-                textFace.setTextColor(Color.parseColor("#005B1B"));
-                textSkin.setTextColor(Color.parseColor("#373131"));
+                textChart.setBackgroundColor(Color.parseColor("#000"));
+                textCart.setBackgroundColor(Color.parseColor("#F5F5F5"));
+                textHome.setBackgroundColor(Color.parseColor("#F5F5F5"));
+                textSetting.setBackgroundColor(Color.parseColor("#F5F5F5"));
 
                 getSupportFragmentManager()
                         .beginTransaction()
@@ -76,14 +76,14 @@ public class MainActivity extends AppCompatActivity {
                         .commit();
             }
         });
-        textSkin = findViewById(R.id.testSetting);
-        textSkin.setOnClickListener(new View.OnClickListener() {
+        textSetting = findViewById(R.id.testSetting);
+        textSetting.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                textBody.setTextColor(Color.parseColor("#373131"));
-                textHair.setTextColor(Color.parseColor("#373131"));
-                textFace.setTextColor(Color.parseColor("#373131"));
-                textSkin.setTextColor(Color.parseColor("#005B1B"));
+                textChart.setBackgroundColor(Color.parseColor("#000"));
+                textCart.setBackgroundColor(Color.parseColor("#F5F5F5"));
+                textHome.setBackgroundColor(Color.parseColor("#F5F5F5"));
+                textSetting.setBackgroundColor(Color.parseColor("#F5F5F5"));
                 getSupportFragmentManager()
                         .beginTransaction()
                         .replace(R.id.fragment_container, new SkinFragment())

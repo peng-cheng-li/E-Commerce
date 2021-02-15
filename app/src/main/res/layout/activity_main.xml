@@ -10,49 +10,60 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraintLayout_under"
         android:layout_width="match_parent"
-        android:layout_height="60dp"
+        android:layout_height="75dp"
         android:background="#F5F5F5"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent">
 
-
         <TextView
             android:id="@+id/textHome"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="0dp"
             android:fontFamily="@font/rubik_medium"
             android:gravity="center"
+            android:background="#F5F5F5"
             android:text="Home"
-            android:textColor="#373131"
+            android:drawableTop="@drawable/ic_baseline_home_24"
+            android:layout_marginTop="18dp"
             android:textSize="16sp"
             app:layout_constraintBottom_toBottomOf="@id/constraintLayout_under"
+            app:layout_constraintEnd_toStartOf="@id/testSetting"
             app:layout_constraintStart_toStartOf="@id/constraintLayout_under"
-            app:layout_constraintTop_toTopOf="@id/constraintLayout_under" />
+            app:layout_constraintTop_toTopOf="@id/constraintLayout_under"
+            app:layout_constraintVertical_bias="1.0" />
 
         <TextView
             android:id="@+id/testSetting"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="0dp"
             android:fontFamily="@font/rubik_medium"
             android:gravity="center"
-            android:text="Skin"
-            android:textColor="#373131"
+            android:drawableTint="#111"
+            android:text="Sitting"
+            android:layout_marginTop="18dp"
+            android:textColor="#111"
             android:textSize="16sp"
+            android:drawableTop="@drawable/ic_baseline_settings_24"
             app:layout_constraintBottom_toBottomOf="@id/constraintLayout_under"
+            app:layout_constraintEnd_toStartOf="@id/textChart"
             app:layout_constraintStart_toEndOf="@id/textHome"
             app:layout_constraintTop_toTopOf="@id/constraintLayout_under" />
 
         <TextView
-            android:id="@+id/textItem"
-            android:layout_width="wrap_content"
+            android:id="@+id/textChart"
+            android:layout_width="0dp"
             android:layout_height="0dp"
             android:fontFamily="@font/rubik_medium"
             android:gravity="center"
-            android:text="Body"
-            android:textColor="#373131"
+            android:text="Chart"
+            android:textColor="#111"
             android:textSize="16sp"
+            android:drawableTint="#111"
+            android:layout_marginTop="18dp"
+            android:drawableTop="@drawable/ic_baseline_chat_24"
             app:layout_constraintBottom_toBottomOf="@id/constraintLayout_under"
+            app:layout_constraintEnd_toStartOf="@id/textCart"
             app:layout_constraintStart_toEndOf="@id/testSetting"
             app:layout_constraintTop_toTopOf="@id/constraintLayout_under" />
 
@@ -69,17 +80,20 @@
         <!--            android:src="@drawable/ic_search" />-->
 
         <TextView
-            android:id="@+id/textHair"
+            android:id="@+id/textCart"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:fontFamily="@font/rubik_medium"
             android:gravity="center"
-            android:text="Hair"
-            android:textColor="#373131"
+            android:text="Cart"
+            android:layout_marginTop="18dp"
+            android:textColor="#111"
+            android:drawableTop="@drawable/ic_baseline_shopping_cart_24"
             android:textSize="16sp"
+            android:drawableTint="#111"
             app:layout_constraintBottom_toBottomOf="@id/constraintLayout_under"
             app:layout_constraintEnd_toEndOf="@id/constraintLayout_under"
-            app:layout_constraintStart_toEndOf="@id/textItem"
+            app:layout_constraintStart_toEndOf="@id/textChart"
             app:layout_constraintTop_toTopOf="@id/constraintLayout_under" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 

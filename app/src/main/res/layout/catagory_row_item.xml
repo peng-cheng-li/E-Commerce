@@ -18,7 +18,7 @@
         android:layout_marginBottom="12dp"
         android:fontFamily="@font/rubik_medium"
         android:text="Most Popular"
-        android:textColor="#373131"
+        android:textColor="#111"
         android:textSize="12sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
