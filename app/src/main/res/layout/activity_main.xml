@@ -8,9 +8,9 @@
     tools:context=".activity.MainActivity">
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/constraintLayout_left"
+        android:id="@+id/constraintLayout_under"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
+        android:layout_height="60dp"
         android:background="#F5F5F5"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -20,42 +20,41 @@
         <TextView
             android:id="@+id/textHome"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="0dp"
             android:fontFamily="@font/rubik_medium"
             android:gravity="center"
-            android:text="Face"
+            android:text="Home"
             android:textColor="#373131"
             android:textSize="16sp"
-            app:layout_constraintBottom_toBottomOf="@id/constraintLayout_left"
-            app:layout_constraintStart_toStartOf="@id/constraintLayout_left"
-            app:layout_constraintTop_toTopOf="@id/constraintLayout_left" />
+            app:layout_constraintBottom_toBottomOf="@id/constraintLayout_under"
+            app:layout_constraintStart_toStartOf="@id/constraintLayout_under"
+            app:layout_constraintTop_toTopOf="@id/constraintLayout_under" />
 
         <TextView
             android:id="@+id/testSetting"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="0dp"
             android:fontFamily="@font/rubik_medium"
             android:gravity="center"
-
             android:text="Skin"
             android:textColor="#373131"
             android:textSize="16sp"
-            app:layout_constraintBottom_toBottomOf="@id/constraintLayout_left"
-            app:layout_constraintStart_toStartOf="@id/textHome"
-            app:layout_constraintTop_toTopOf="@id/constraintLayout_left" />
+            app:layout_constraintBottom_toBottomOf="@id/constraintLayout_under"
+            app:layout_constraintStart_toEndOf="@id/textHome"
+            app:layout_constraintTop_toTopOf="@id/constraintLayout_under" />
 
         <TextView
             android:id="@+id/textItem"
-            android:layout_width="50dp"
-            android:layout_height="100dp"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
             android:fontFamily="@font/rubik_medium"
             android:gravity="center"
             android:text="Body"
             android:textColor="#373131"
             android:textSize="16sp"
-            app:layout_constraintBottom_toBottomOf="@id/constraintLayout_left"
-            app:layout_constraintStart_toStartOf="@id/testSetting"
-            app:layout_constraintTop_toTopOf="@id/constraintLayout_left" />
+            app:layout_constraintBottom_toBottomOf="@id/constraintLayout_under"
+            app:layout_constraintStart_toEndOf="@id/testSetting"
+            app:layout_constraintTop_toTopOf="@id/constraintLayout_under" />
 
         <!--        <ImageView-->
         <!--            android:id="@+id/imageSearch"-->
@@ -71,26 +70,25 @@
 
         <TextView
             android:id="@+id/textHair"
-            android:layout_width="50dp"
-            android:layout_height="100dp"
-            android:layout_marginBottom="80dp"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
             android:fontFamily="@font/rubik_medium"
             android:gravity="center"
             android:text="Hair"
             android:textColor="#373131"
             android:textSize="16sp"
-            app:layout_constraintBottom_toBottomOf="@id/constraintLayout_left"
-            app:layout_constraintEnd_toEndOf="@id/constraintLayout_left"
-            app:layout_constraintStart_toStartOf="@id/textItem"
-            app:layout_constraintTop_toTopOf="@id/constraintLayout_left" />
+            app:layout_constraintBottom_toBottomOf="@id/constraintLayout_under"
+            app:layout_constraintEnd_toEndOf="@id/constraintLayout_under"
+            app:layout_constraintStart_toEndOf="@id/textItem"
+            app:layout_constraintTop_toTopOf="@id/constraintLayout_under" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 
     <FrameLayout
         android:id="@+id/fragment_container"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        app:layout_constraintBottom_toBottomOf="@id/constraintLayout_left"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@id/constraintLayout_under"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
